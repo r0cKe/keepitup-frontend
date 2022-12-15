@@ -31,8 +31,8 @@ function RegisterForm(props) {
 		const json = await response.json();
 
 		if (json.success) {
-			navigate("/mynotes");
 			localStorage.setItem("userDetails", JSON.stringify(json.userId));
+			navigate("/mynotes");
 			showAlert("Registered Successfully", "success");
 		} else {
 			setCredentials({

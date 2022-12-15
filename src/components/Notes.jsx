@@ -15,7 +15,7 @@ function Notes(props) {
 	}, [fetchAgain]);
 
 	async function getNotes(loggedUser) {
-		const response = await fetch(`/api/notes/fetchallnotes`, {
+		const response = await fetch(`https://keeper-backend.onrender.com/api/notes/fetchallnotes`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

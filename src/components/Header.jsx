@@ -20,7 +20,7 @@ function Header(props) {
 	}, [navigate]);
 
 	async function handleLogout() {
-		const response = await fetch(`/api/auth/logout`, {
+		const response = await fetch(`https://keeper-backend.onrender.com/api/auth/logout`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

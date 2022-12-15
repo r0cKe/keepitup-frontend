@@ -19,7 +19,7 @@ const NoteItem = (props) => {
 	// handle the click of the delete button in each note
 	async function handleDelete() {
 		const response = await fetch(
-			`/api/notes/deletenote/${note._id}`,
+			`https://keeper-backend.onrender.com/api/notes/deletenote/${note._id}`,
 			{
 				method: "DELETE",
 				headers: {

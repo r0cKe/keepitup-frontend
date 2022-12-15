@@ -38,7 +38,7 @@ const MyNotesPage = (props) => {
 	const handleSubmit = async (e) => {
 		refClose.current.click();
 
-		const response = await fetch(`/api/notes/editnote/${note.id}`, {
+		const response = await fetch(`https://keeper-backend.onrender.com/api/notes/editnote/${note.id}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",

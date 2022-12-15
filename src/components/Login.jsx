@@ -19,7 +19,7 @@ function LoginForm(props) {
 	async function handleSubmit(e) {
 		e.preventDefault();
 		const { username, password } = credentials;
-		const response = await fetch("/api/auth/login", {
+		const response = await fetch("https://keeper-backend.onrender.com/api/auth/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

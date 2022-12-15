@@ -40,7 +40,7 @@ function InputField(props) {
 		event.preventDefault();
 		const { title, content } = note;
 
-		const response = await fetch("/api/notes/addnote", {
+		const response = await fetch("https://keeper-backend.onrender.com/api/notes/addnote", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

@@ -17,7 +17,7 @@ function RegisterForm(props) {
 		if (password !== confirmPassword) {
 			return alert("Passwords do not match. Try Again!");
 		}
-		const response = await fetch("/api/auth/register", {
+		const response = await fetch("https://keeper-backend.onrender.com/api/auth/register", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
